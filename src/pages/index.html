@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我是一个首页</title>
+  <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      height: 9000px;
+    }
+    li{
+      list-style: none;
+    }
+    /* line1开始 */
+    .container1{
+      width: auto;
+      height: 120px;
+      background-color: #feb10d;
+      text-align: center;
+      line-height: 120px;
+      color: #fff;
+      font-size: 50px;
+      text-shadow: 1px 3px 5px black;
+    }
+    /* line1结束 */
+    /* line2开始 */
+    .menu{
+      width: auto;
+      height: 40px;
+      background: #333;
+    }
+    .menu>.container2{
+      margin: 0 auto;
+      width: 1227px;
+      height: 40px;
+      /* background: pink; */
+    }
+    .container2 .line2-list1{
+      margin-top: 13px;
+      float: left;
+      width: 760px;
+      height: 14px;
+      /* background: green; */
+    }
+    .container2 .line2-list1 li{
+      margin-right: 8px;
+      float: left;
+      width: auto;
+      height: 14px;
+      /* background: skyblue; */
+      font-size: 10px;
+      text-align: center;
+      line-height: 14px;
+      color: #979797;
+    }
+    .line2-list1 li span{
+      font-size: 14px;
+      margin-left: 8px;
+      line-height: 14px;
+    }
+
+
+
+    .container2 .line2-list2{
+      float: right;
+      margin-top: 13px;
+      /* margin-right: 120px; */
+      width: auto;
+      height: 14px;
+      /* background: purple; */
+    }
+    .container2 .line2-list2 li{
+      margin-right: 8px;
+      float: left;
+      width: auto;
+      height: 14px;
+      /* background: red; */
+      font-size: 10px;
+      text-align: center;
+      line-height: 14px;
+      color: #979797;
+    }
+    .line2-list2 li span{
+      font-size: 14px;
+      margin-left: 8px;
+      line-height: 14px;
+    }
+
+
+    .container2 .cart{
+      float: right;
+      margin-top: 0px;
+      margin-right: 0px;
+      width: 120px;
+      height: 40px;
+      background: #424242;
+      text-align: center;
+      line-height: 40px;
+      color: #979797;
+    }
+    .container2 .cart span{
+      font-size: 20px;
+    }
+    /* line2结束 */
+    /* line3开始 */
+    .line3{
+      width: auto;
+      height: 100px;
+      /* background: purple; */
+    }
+    .line3>.container3{
+      padding-top: 22px;
+      margin: 0 auto;
+      width: 1227px;
+      height: 100px;
+      /* background: pink; */
+    }
+    .container3 .logo{
+      width: 56px;
+      height: 56px;
+      background: red;
+    }
+    .container3 ul{
+      margin-left: 178px;
+      margin-top: -78px;
+      width: 614px;
+      height: 100px;
+      /* background: green; */
+    }
+    .container3 ul li{
+      float: left;
+      margin: 0 10px;
+      width: auto;
+      height: 100px;
+      /* background: blue; */
+      font-size: 14px;
+      text-align: center;
+      line-height: 100px;
+    }
+    .container3 .search{
+    
+      margin-left: 929px;
+      margin-top: -85px;
+      width: 298px;
+      height: 50px;
+      /* background: skyblue; */
+      border: 1px solid #e0e0e0;
+    }
+    .container3 .search .input{
+      position: relative;
+      float: left;
+      width: 246px;
+      height: 50px;
+      /* background: green; */
+      border-right: 1px solid #e0e0e0;
+    }
+    .search .input input{
+      width: 246px;
+      height: 50px;
+      border: none;
+      border-right: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .search .input P{
+      position: absolute;
+      left: 90px;
+      top: 20px;
+      font-size: 10px;
+      background: #eeeeee;
+    }
+    .container3 .search span{
+      diaplay: block;
+      float: left;
+      width: 50px;
+      height: 50px;
+      /* background: #ccc; */
+      text-align: center;
+      line-height: 50px;
+      font-size: 14px;
+    }
+    /* line3结束 */
+    /* line4开始 */
+    .line4{
+      width: auto;
+      height: 462px;
+      background: skyblue;
+    }
+    .line4 .container4{
+      margin: 0 auto;
+      width: 1227px;
+      height: 462px;
+      background: pink;
+    }
+    .line4 .container4 .line4list{
+      padding-top: 21px;
+      float: left;
+      width: 236px;
+      height: 462px;
+      background: #458b84;
+    }
+    .container4 .line4list li{
+      width: 236px;
+      height: 42px;
+      background: green;
+      font-size: 12px;
+      color: #fff;
+      line-height: 42px;
+    }
+    .line4list li .p1{
+      margin: 0 auto;
+      float: left;
+      width: 124px;
+      height: 42px;
+      margin-left: 30px;
+      background: blue;
+      text-align: left;
+    }
+    .line4list li .p2{
+      margin: 0 auto;
+      float: right;
+      width: 30px;
+      height: 42px;
+      margin-right: 25px;
+      background: purple;
+      text-align: right;
+    }
+    .line4 .container4 .lunbo{
+      float: left;
+      width: 991px;
+      height: 462px;
+      background: #0fc4b2;
+    }
+    /* line4结束 */
+    /* line5开始 */
+    /* line5结束 */
+    /* line6开始 */
+    /* line6结束 */
+    /* line7开始 */
+    /* line7结束 */
+
+  
+  
+  </style>
+</head>
+<body>
+  <!-- line1开始 -->
+    <a><div class="container1">应对疫情小米服务业务调整通知</div></a>
+  <!-- line1结束 -->
+
+
+  <!-- line2开始 -->
+  <div class="menu">
+    <div class="container2">
+      <ul class="line2-list1">
+        <li>小米商城<span>|</span></li>
+        <li>MIUI<span>|</span></li>
+        <li>loT<span>|</span></li>
+        <li>云服务<span>|</span></li>
+        <li>金融<span>|</span></li>
+        <li>有品<span>|</span></li>
+        <li>小爱开放平台<span>|</span></li>
+        <li>企业团购<span>|</span></li>
+        <li>资质认证<span>|</span></li>
+        <li>协议规则<span>|</span></li>
+        <li>下载app<span>|</span></li>
+        <li>Select Location</li>
+      </ul>
+
+      <div class="cart"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;购物车&nbsp;(0)</div>
+
+      <ul class="line2-list2">
+        <li>登录<span>|</span></li>
+        <li>注册<span>|</span></li>
+        <li>消息通知</li>
+      </ul> 
+    </div>
+  </div>
+  <!-- line2结束 -->
+
+
+  <!-- line3开始 -->
+  <div class="line3">
+    <div class="container3">
+      <div class="logo"></div>
+      <ul>
+        <li>小米手机</li>
+        <li>Redmi红米</li>
+        <li>电视</li>
+        <li>笔记本</li>
+        <li>家电</li>
+        <li>路由器</li>
+        <li>只能硬件</li>
+        <li>服务</li>
+        <li>社区</li>
+      </ul>
+      <div class="search">
+        <div class="input">
+          <input type="text">
+          <p>小米9 Pro 5G</p>
+        </div>
+        <span class="glyphicon glyphicon-search"></span>
+      </div>
+    </div>
+  </div>
+  <!-- line3结束 -->
+
+  <!-- line4开始 -->
+  <div class="line4">
+    <div class="container4">
+      <ul class="line4list">
+        <li><p class="p1">手机 电话卡</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">电视 盒子</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">笔记本 显示器 平板</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">家电 插线板</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">出行 穿戴</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">智能 路由器</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">电源 配件</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">健康 儿童</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">耳机 音响</p><p class="p2"> &gt;</p></li>
+        <li><p class="p1">生活 箱包</p><p class="p2"> &gt;</p></li> 
+      </ul>
+      <div class="lunbo"></div>
+    </div>
+  </div>
+  <!-- line4结束 -->
+  <!-- line5开始 -->
+  <!-- line5结束 -->
+  <!-- line6开始 -->
+  <!-- line6结束 -->
+  <!-- line7开始 -->
+  <!-- line7结束 -->
+  <!-- line8开始 -->
+  <!-- line8结束 -->
+  
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+</html>
