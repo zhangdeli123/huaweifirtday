@@ -7,6 +7,7 @@
   <title>我是一个首页</title>
   <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
   <style>
     *{
       margin: 0;
@@ -59,6 +60,7 @@
       text-align: center;
       line-height: 14px;
       color: #979797;
+      cursor: pointer;
     }
     .line2-list1 li span{
       font-size: 14px;
@@ -86,6 +88,7 @@
       text-align: center;
       line-height: 14px;
       color: #979797;
+      cursor: pointer;
     }
     .line2-list2 li span{
       font-size: 14px;
@@ -143,6 +146,7 @@
       font-size: 14px;
       text-align: center;
       line-height: 100px;
+      cursor: pointer;
     }
     .container3 .search{
     
@@ -185,30 +189,78 @@
       line-height: 50px;
       font-size: 14px;
     }
+
+
+
+    .nav_box{
+      /* display: none; */
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: auto;
+      height: 288px;
+      background: #fff;
+      z-index: 999;
+    }
+    .nav_box .container{
+      padding: 0;
+      margin: 0 auto;
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1227px;
+      height: 288px;
+      /* background: blue; */
+
+    }
+    .nav_box .container li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 255px;
+      height: 100%;
+      /* background: red; */
+    }
+    .container li div{
+      width: auto;
+      height: auto;
+      border-right: 1px solid #e0e0e0;
+    }
+    .container li p{
+      display: block;
+    }
+    .container li span{
+      color: orange;
+    }
     /* line3结束 */
     /* line4开始 */
     .line4{
       width: auto;
       height: 462px;
-      background: skyblue;
+      /* background: skyblue; */
     }
     .line4 .container4{
+      position: relative;
       margin: 0 auto;
       width: 1227px;
       height: 462px;
       background: pink;
     }
     .line4 .container4 .line4list{
+      position: absolute;
       padding-top: 21px;
       float: left;
       width: 236px;
       height: 462px;
-      background: #458b84;
+      background: rgba(0,0,0,.2);
+      z-index: 99;
     }
     .container4 .line4list li{
       width: 236px;
       height: 42px;
-      background: green;
+      /* background: green; */
       font-size: 12px;
       color: #fff;
       line-height: 42px;
@@ -219,7 +271,7 @@
       width: 124px;
       height: 42px;
       margin-left: 30px;
-      background: blue;
+      /* background: blue; */
       text-align: left;
     }
     .line4list li .p2{
@@ -228,14 +280,15 @@
       width: 30px;
       height: 42px;
       margin-right: 25px;
-      background: purple;
+      /* background: purple; */
       text-align: right;
     }
-    .line4 .container4 .lunbo{
-      float: left;
-      width: 991px;
+    .container4 .swiper-container {
+      width: 1227px;
       height: 462px;
-      background: #0fc4b2;
+    }  
+    .container4 .swiper-container .swiper-button-prev{
+      left: 260px;
     }
     /* line4结束 */
     /* line5开始 */
@@ -259,12 +312,12 @@
   <div class="menu">
     <div class="container2">
       <ul class="line2-list1">
-        <li>小米商城<span>|</span></li>
-        <li>MIUI<span>|</span></li>
-        <li>loT<span>|</span></li>
-        <li>云服务<span>|</span></li>
-        <li>金融<span>|</span></li>
-        <li>有品<span>|</span></li>
+        <li>1<span>|</span></li>
+        <li>2<span>|</span></li>
+        <li>2<span>|</span></li>
+        <li>4<span>|</span></li>
+        <li>5<span>|</span></li>
+        <li>6<span>|</span></li>
         <li>小爱开放平台<span>|</span></li>
         <li>企业团购<span>|</span></li>
         <li>资质认证<span>|</span></li>
@@ -290,15 +343,15 @@
     <div class="container3">
       <div class="logo"></div>
       <ul>
-        <li>小米手机</li>
-        <li>Redmi红米</li>
-        <li>电视</li>
-        <li>笔记本</li>
-        <li>家电</li>
-        <li>路由器</li>
-        <li>只能硬件</li>
-        <li>服务</li>
-        <li>社区</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
       </ul>
       <div class="search">
         <div class="input">
@@ -307,6 +360,16 @@
         </div>
         <span class="glyphicon glyphicon-search"></span>
       </div>
+    </div>
+    <div class="nav_box ">
+        <ul class="container">
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </ul>
     </div>
   </div>
   <!-- line3结束 -->
@@ -326,7 +389,23 @@
         <li><p class="p1">耳机 音响</p><p class="p2"> &gt;</p></li>
         <li><p class="p1">生活 箱包</p><p class="p2"> &gt;</p></li> 
       </ul>
-      <div class="lunbo"></div>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e491c83bde043ca4e8ff2d8255dfef.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt=""></div>
+              <div class="swiper-slide"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dcb09c80c58dc9d71623c925739a3733.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt=""></div>
+              <div class="swiper-slide"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6bd4174b8c5aad67a64864a5716ad152.jpg?thumb=1&w=1533&h=575&f=webp&q=90" alt=""></div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+          <!-- 如果需要滚动条 -->
+          <div class="swiper-scrollbar"></div>
+      </div>
+
     </div>
   </div>
   <!-- line4结束 -->
@@ -342,5 +421,119 @@
 
   <script src="../lib/jquery/dist/jquery.min.js"></script>
   <script src="../js/index.js"></script>
+
+  <!-- 导航栏菜单的渲染 -->
+  <script>
+     getList()
+    function getList() {
+      $.ajax({
+        url: '../lib/nav.json',
+        dataType: 'json',
+        success: function (res) {
+          // console.log(res)
+          // 1. 准备一个 空字符串
+          let str = ''
+
+          // 2. 进行拼接
+          // 2-1. 遍历外层数组, 先把一级标题写上
+          res.forEach(item => {
+            str += `<li>${ item.name }<span>|</span></li>`
+          })
+
+          // 3. 渲染到页面上
+          $('.container2 > .line2-list1').html(str)
+        }
+      })
+    }
+  </script>
+
+
+<!-- 横向二级菜单的渲染 -->
+  <script>
+     getList()
+
+function getList() {
+  $.ajax({
+    url: '../lib/nav_top.json',
+    dataType: 'json',
+    success: function (res) {
+      console.log(res)
+
+      // 4-1. 准备一个空字符串
+      let str = ''
+
+      // 4-2. 渲染一级的 li
+      res.forEach(item => {
+        str += `<li>${ item.name }</li>`
+      })
+
+      // 4-3. 填充到 nav_top 里面的 ul 里面
+      $('.container3 > ul')
+        .html(str)
+        .on({
+          mouseenter: () => $('.nav_box').stop().slideDown(),
+          mouseleave: () => $('.nav_box').stop().slideUp()
+        })
+        .children('li') // 找到所有的一级菜单下的 li
+        .on('mouseover', function () {
+          // 5-1. 知道自己移入的时哪一个 li
+          const index = $(this).index()
+          // 5-2. 找到要渲染的数组
+          const list = res[index].list
+          // 5-3. 用我们找到的数组把 nav_box 位置渲染了就可以了
+          let str = ''
+
+          // 5-4. 进行组装
+          list.forEach(item => {
+            str += `
+              <li>
+                <div>
+                 <img src="${ item.list_url }" alt="">
+                </div>
+                <p>${ item.list_name }</p>
+                <span>${ item.list_price }</span>
+              </li>
+            `
+          })
+
+          // 5-5. 填充到页面里面
+          $('.nav_box > ul').html(str)
+        })
+
+      // 4-4. 给 nav_box 添加一个移入移出事件
+      $('.nav_box')
+        .on({
+          mouseover: function () { $(this).finish().show() },
+          mouseout: function () { $(this).finish().slideUp() }
+        })
+    }
+  })
+}
+  
+  </script>
+
+  <!-- 轮播图 -->
+  <script>        
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+        
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        
+        // 如果需要滚动条
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })        
+      </script>
 </body>
 </html>
